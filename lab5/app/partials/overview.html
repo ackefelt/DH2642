@@ -1,0 +1,18 @@
+<div class="row myDinner">
+    <p>My Dinner: {{getNumberOfGuests()}} people</p><span class="pull-right"><a href="#/search" class="btn submitBtn">Go back and edit dinner</a></span>
+
+    <div id="chosenDishes" class="row center">
+        <div class="dishThumb" ng-repeat="dish in dishes">
+            <img src="{{dish.ImageURL}}" class="img-thumbnail center-block" width="120">
+            <h1>{{dish.Title}}</h1>
+            <h4 class="text-right">{{getDishPrice(dish)}} SEK</h4>
+        </div>
+        <div class="totPrice">
+            Total:<br />
+            <p>{{getTotalMenuPrice()}} SEK</p>
+        </div>
+    </div>
+    <div id="chosenDishesBot" class="row center">
+        <a href="#/preparation" class="btn printBtn">Print Full Recipe</a>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<!-- TODO in Lab 5: Display the items on the menu with cost for each -->
+
+
+<!-- Displaying number of guests both in input box and here is redundant. It is here only for the example
+purpose so you can see how some information from the model can be retrieved. In Lab 5 you will replace 
+this with Total price of the menu -->
+<div class="row sidebarTop">
+    <h3>My Dinner</h3>
+    People: <input type="number" ng-model="numberOfGuests" ng-change="setNumberOfGuest(numberOfGuests)" class="guestsInput" />
+</div>
+<div class="row dishlistTop">
+    Dish Name
+    <span class="pull-right">Cost</span>
+</div>
+<div class="row dishlist">
+    <ul id="dishesList">
+    </ul>
+    <ul>
+        <li ng-repeat="dish in chosenDishes">
+        <a href="" class="close deleteBtn" aria-label="Close" ng-click="removeDish(dish.RecipeID)">&times;</a> {{dish.Title}}
+        <span class='pull-right'>{{getDishPrice(dish)}}</span></li>
+        <li>Pending<span class="pull-right">{{getCurrentDishPrice()}}</span></li>
+    </ul>
+</div>
+<div class="row dishlistBottom">
+    <span class="pull-right">SEK {{totalMenuCost()}}</span><br /><br />
+    <a href="#/overview" class="center-block btn submitBtn">Confirm dinner</a>
+</div>

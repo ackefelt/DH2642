@@ -1,0 +1,220 @@
+.c_home {
+	border: 3px solid #000;
+	min-height: 300px;
+	display: block;
+}
+
+.header_home {
+	padding-left: 1em;
+	border-bottom: 3px solid #000;
+	min-height: 9em;
+	background-color:rgba(255,229,153,0.7);
+}
+
+.header_rest {
+	padding-left: 1em;
+	border-bottom: 3px solid #000;
+	min-height: 9em;
+	background-color: rgba(195, 196, 206, 0.7);
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h4 {
+	font-style: italic;
+}
+
+.home {
+	margin-top: 15em;
+	padding: 1em;
+	background-color:rgba(255,255,255,0.7);
+}
+
+
+.new_dinner_button {
+	background-color: #f6b26b;
+	border: 2px solid #000;
+	margin-top: 10px;
+	padding: 10px;
+	width: 200px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+	font-weight: bold;
+}
+
+.sidebarTop {
+	padding: 0em 1em 1em 1em;
+	border-right: 3px solid #000;
+}
+
+.options {
+	background-color: #ffe599;
+	min-height: 7em;
+	padding: 1em;
+	border-bottom: 3px solid #000;
+}
+
+.recipes {
+	padding: 1em;
+}
+
+.dishlistTop {
+	background-color: #ccc;
+	padding: 0.5em 1em;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+	border-right: 3px solid #000;
+	font-weight: bold;
+}
+
+.dishlist {
+	padding: 0;
+	border-bottom: 3px solid #000;
+	color: #cc0000;
+	border-right: 3px solid #000;
+}
+
+.dishlist ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dishlist li {
+	padding: 0.5em 1em;
+}
+
+.dishlistBottom {
+	padding: 0.5em 1em;
+	color: #cc0000;
+	border-right: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+.submitBtn {
+	background-color: #f6b26b;
+	color: #000;
+	border: 2px solid #000;
+}
+
+.searchBtn {
+	background-color: #f6b26b;
+	color: #000;
+	border: 2px solid #000;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.deleteBtn {
+	float: none;
+	color: #ff0000;
+}
+
+.confirmBtn {
+	background-color: #f6b26b;
+	color: #000;
+	border: 2px solid #000;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+.center {
+	margin: auto;
+	padding: 1em;
+	text-align: center;
+}
+
+.myDinner {
+	background-color: #ffe599;
+	min-height: 4em;
+	padding: 1em;
+	border-bottom: 3px solid #000;
+}
+
+.myDinner p {
+	font-size: 25px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.printBtn {
+	background-color: #f6b26b;
+	color: #000;
+	border: 2px solid #000;
+	font-size: 18px;
+	padding: 0.5em;
+	width: 20em;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+.dishInfo p {
+	margin-top: 1em;
+	font-size: 12px;
+}
+
+.dishIngredients {
+	background-color: #ffe599;
+	padding: 1em;
+	border-left: 3px solid #000;
+	border-bottom: 3px solid #000;
+	border-right: 3px solid #000;
+}
+
+.dishIngredients p {
+	font-size: 20px;
+}
+
+.dishPreperations {
+	padding: 1em;
+}
+
+.ingredientsTable {
+	border: 0;
+}
+
+.ingredientSum {
+	font-weight: bold;
+	border-top: 1px solid #000;
+}
+
+.dishThumb {
+	width: 10em;
+	display: inline-block;
+	margin-right: 2em;
+
+}
+
+.dishThumb h1 {
+	background-color: #eeeeee;
+	margin: 0;
+	padding: 5px;
+	border: 1px solid #bbbbbb;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.dishThumb h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.dishThumb p {
+	font-size: 14px;
+	padding-top: 3px;
+}
+
+.totPrice {
+	width: 10em;
+	display: inline-block;
+	text-align: left;
+	margin-left: 3em;
+}
+
+.totPrice p {
+	font-size: 18px;
+	font-weight: bold;
+	color: #cc0000;
+}
+
+.dontDisplay {
+	display: none;
+}
