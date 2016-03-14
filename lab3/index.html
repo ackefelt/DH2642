@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Dinner planner</title>
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+	    <!-- My own css -->
+	    <link rel="stylesheet" href="styles/style.css">
+	    
+	</head>
+	<body>
+
+
+		<!-- HOMEPAGE/index -->
+
+
+		<div id="indexView" class="container c_home" style="background-image: url(images/home.jpg);">
+			<div id="exampleView">
+				<div class = "row header_home">
+					<h1>HOMELETTE</h1>
+					<h4>From the best chefs in the world directly into your kitchen</h4>
+				</div>
+				<div class="row">
+					<div class ="col-md-8 home">
+						<h2>A Home Dinner Service</h2>
+						Ea omnesque complectitur vix, ad his mucius oblique mandamus. Exerci docendi mel ne. Ius dicta dolores mentitum ea. Eum perfecto incorrupte delicatissimi eu. Malis delenit an sed, impetus scribentur mediocritatem his at. Ad nibh harum mea, vitae dolorum et sed. 
+						<br/>
+						<button id="startBtn" class="new_dinner_button">Create new dinner</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- selectDish/slectedDish.html -->
+
+
+		<div id="selectDishView" class="container c_home dontDisplay">
+			<div id="exampleView">
+				<div class = "row header_rest">
+					<h1>HOMELETTE</h1>
+					<h4>From the best chefs in the world directly into your kitchen</h4>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="row sidebarTop">
+							<h3>My Dinner</h3>
+							People: 
+							<button id="minusPeople" class="peopleBtn"><span class="glyphicon glyphicon-minus"></span></button>
+							<span id="numPeople"></span>
+							<button id="addPeople" class="peopleBtn"><span class="glyphicon glyphicon-plus"></span></button>
+						</div>
+						<div class="row dishlistTop">
+							Dish Name
+							<span class="pull-right">Cost</span>
+						</div>
+						<div class="row dishlist">
+							<ul id="dishesList">
+								<li>Pending<span class="pull-right" id="pendingDishPrice"></span></li>
+							</ul>
+						</div>
+						<div class="row dishlistBottom">
+							<span class="pull-right">SEK <span id="totMenuPrice"></span></span><br /><br />
+							<button id="confirmBtn" class="center-block btn submitBtn" disabled="disabled">Confirm dinner</button>
+						</div>
+					</div>
+
+					<div class="col-md-10 mainframe">
+
+
+						<!-- selectDish.hmtl -->
+
+
+						<div id="options" class="row options">
+							<b>SELECT DISH</b><br/>
+							<form id="searchDishForm">
+							<input id="search" type="text" value="Enter key words">  <input id="searchBtn" type="submit" value="search" class="btn-sm searchBtn">
+							<select id="dishType" name="dishtype">
+								<option value="all">All dishes</option>
+								<option value="starter">Starter</option>
+								<option value="main dish">Main</option>
+								<option value="dessert">Dessert</option>
+							</select>
+							</form>
+						</div>
+						<div class="row recipes" id="availableDishes"></div>
+
+
+						<!-- dish.html -->
+
+
+						<div id="dishView" class="row dontDisplay">
+							<div class="col-md-5 dishInfo">
+								<h2><span id="dishName"></span></h2>
+								<span id="dishPicture"></span><br/><br/>
+								<button id="backBtn" class="btn submitBtn"> Back to Select dish</button>
+							</div>
+							<div class="col-md-5 dishIngredients">
+								<p>INGREDIENTS FOR <span id="numPeopleDish"></span>
+								 PEOPLE <br/></p>
+								 <table class="table ingredientsTable" id="ingredientsTbl">
+								 </table>
+								 <button id="addDishBtn" class="btn submitBtn">Confirm Dish</button>
+								 <p align="right">SEK <span id="totDishPrice"></span></p>
+							</div>
+						</div>
+						<div id = "dishPreperations" class="row dishPreperations dontDisplay">
+							<h2>Preparations</h2>
+							<span id="dishPrep"></span>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- dinnerOverview -->
+
+
+		<div id="dinnerOverView" class="container c_home dontDisplay">
+			<div id="exampleView">
+				<div class = "row header_rest">
+					<h1>HOMELETTE</h1>
+					<h4>From the best chefs in the world directly into your kitchen</h4>
+				</div>
+				<div class="row myDinner">
+					<p>My Dinner: <span id="numPeople2"></span> people</p>
+					<span class="pull-right"><button id="overviewBackBtn" class="btn submitBtn">Go back and edit dinner</button></span>
+				</div>
+
+
+				<!-- dinnerOverview -->
+
+
+				<div class="row center" id="chosenDishes"></div>
+				<div class="row center" id="chosenDishesBot">
+					<button id="overviewPrintBtn" class="btn printBtn">Print Full Recipe</button>
+				</div>
+
+
+				<!-- dinnerPrep -->
+
+
+				<div id="chosenDishesPrep" class="row"></div>
+			</div>
+		</div>
+
+
+	    <!-- jQuery -->
+	    <script src="https://code.jquery.com/jquery.js"></script>
+	    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+	    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<!-- The application JavaScript code -->
+		<script src="js/app.js"></script>
+		<script src="js/model/dinnerModel.js"></script>
+
+
+		<script src="js/view/indexView.js"></script>
+		<script src="js/view/selectDishView.js"></script>
+		<script src="js/view/dinnerOverView.js"></script>
+		
+
+		<script src="js/controller/indexViewController.js"></script>
+		<script src="js/controller/selectDishViewController.js"></script>
+		<script src="js/controller/dinnerOverViewController.js"></script>
+  	</body>
+</html>
