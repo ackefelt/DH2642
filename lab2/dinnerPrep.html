@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Dinner planner</title>
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+	    <!-- My own CSS -->
+	    <link rel="stylesheet" href="styles/style.css">
+	    
+	</head>
+	<body class="dinnerPrep">
+		<div class="container c_home">
+			<div id="exampleView">
+				<div class = "row header_rest">
+					<h1>HOMELETTE</h1>
+					<h4>From the best chefs in the world directly into your kitchen</h4>
+				</div>
+				<div class="row myDinner">
+					<p>My Dinner: <span id="numPeople"></span> people</p>
+					<span class="pull-right"><a href = "#" class="btn submitBtn">Go back and edit dinner</a></span>
+				</div>
+				<div id="chosenDishes"></div>
+			</div>
+		</div>
+
+	    <!-- jQuery -->
+	    <script src="https://code.jquery.com/jquery.js"></script>
+	    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+	    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<!-- The application JavaScript code -->
+		<script src="js/app.js"></script>
+		<script src="js/model/dinnerModel.js"></script>
+		<script src="js/view/exampleView.js"></script>
+  	</body>
+</html>

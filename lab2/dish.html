@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Dinner planner</title>
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+	    <!-- My own CSS -->
+	    <link rel="stylesheet" href="styles/style.css">
+	    
+	</head>
+	<body class="dish">
+		<div class="container c_home">
+			<div id="exampleView">
+				<div class = "row header_rest">
+					<h1>HOMELETTE</h1>
+					<h4>From the best chefs in the world directly into your kitchen</h4>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="row sidebarTop">
+							<h3>My Dinner</h3>
+							People: 
+							<button id="minusPeople" class="peopleBtn"><span class="glyphicon glyphicon-minus"></span></button>
+							<span id="numPeople"></span>
+							<button id="addPeople" class="peopleBtn"><span class="glyphicon glyphicon-plus"></span></button>
+						</div>
+						<div class="row dishlistTop">
+							Dish Name
+							<span class="pull-right">Cost</span>
+						</div>
+						<div class="row dishlist">
+							<ul>
+								<li>Pending<span class="pull-right" id="pendingDishPrice"></span></li>
+							</ul>
+						</div>
+						<div class="row dishlistBottom">
+							<span class="pull-right">SEK <span id="totMenuPrice"></span></span><br /><br />
+							<button class="center-block btn confirmBtn" disabled="disabled">Confirm dinner</button>
+						</div>
+					</div>
+
+					<div class="col-md-10 mainframe">
+						<div class="row">
+							<div class="col-md-5 dishInfo">
+								<h2><span id="dishName"></span></h2>
+								<span id="dishPicture"></span><br/><br/>
+								<a href="#" class="btn submitBtn"> Back to Select dish</a>
+							</div>
+							<div class="col-md-5 dishIngredients">
+								<p>INGREDIENTS FOR <span id="numPeopleDish"></span>
+								 PEOPLE <br/></p>
+								 <table class="table ingredientsTable" id="ingredientsTbl">
+								 </table>
+							</div>
+						</div>
+						<div class="row dishPreperations">
+							<h2>Preparations</h2>
+							<span id="dishPrep"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	    <!-- jQuery -->
+	    <script src="https://code.jquery.com/jquery.js"></script>
+	    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+	    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+		<!-- The application JavaScript code -->
+		<script src="js/app.js"></script>
+		<script src="js/model/dinnerModel.js"></script>
+		<script src="js/view/exampleView.js"></script>
+  	</body>
+</html>
